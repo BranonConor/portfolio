@@ -58,15 +58,14 @@ body {
 /* --- CONTENT --- */
 .container {
     width: 100%
-
 }
 .grid1 {
     display: grid;
     margin-top: 60px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 200px;
-    border: 2px dashed grey;
-    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 10px;
     text-align: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -76,12 +75,13 @@ body {
 .grid2 {
     display: grid;
     margin-top: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 200px;
-    border: 2px dashed grey;
-    padding: 20px;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 150px;
+    padding: 10px;
     text-align: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     margin-bottom: 10px;
 }
@@ -89,7 +89,6 @@ body {
     /*background-color: rgba(0,0,0,.5);*/
     color: white;
     border-radius: 5px;
-    padding: 100px;
     font-size: 20px;
 }
 .one  {
@@ -98,15 +97,27 @@ body {
     font-size: 70px;
     text-align: center;
 }
-.one h1 {
+.one i {
+    margin: 50px 50px;
+    padding-bottom: 10px;
     animation: pulse 3s infinite;
+}
+.icon {
+    animation: pulse 3s infinite;
+    padding-bottom: 10px;
 }
 @keyframes pulse {
     0% {
       color: white;
     }
-    50% {
+    25% {
       color: rgb(247, 160, 154);
+    }
+    50% {
+        color: white;
+      }
+    75% {
+      color: rgb(121, 191, 238);
     }
     100% {
         color: white;
@@ -114,8 +125,19 @@ body {
 }
 .one p {
     font-size: 30px;
-    margin: 10px 70px;
+    margin: 20px 70px;
 }
 hr {
     width: 50%;
+    margin-bottom: 400px;
+}
+.a {
+    text-align: right;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.b {
+    text-align: left;
+    font-size: 25px;
+    text-decoration: underline;
 }
