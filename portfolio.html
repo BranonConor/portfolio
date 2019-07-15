@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Practice Site</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <title>Branon Eusebio</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
 <!-- NAVBAR -->
     <div class="navbar">
         <ul class="navlist">
-            <li class="item brand">B / E</li>
+            <li class="item brand"><a href="#">B <i class="fab fa-connectdevelop brandIcon"></i> E</a></li>
             <li class="item button">About</li>
             <li class="item button">Contact</li>
             <li class="item button">Portfolio</li>
@@ -29,21 +30,41 @@
         </div>
     <!-- Icons -->
         <div class="grid2">
-            <div class="box a"></div>
-            <div class="box icon"><i class="fas fa-drafting-compass fa-7x"></i></div>
-            <div class="box b"><span> ⟵ </span> <a href="https://github.com/BranonConor">Aspiring Web Developer</a></div>
-            <div class="box a"><a href="http://tmsmind.com">Neuropsychiatric Clinic Manager</a><span> ⟶ </span> </div>
-            <div class="box icon"><i class="fas fa-brain fa-7x"></i></div>
-            <div class="box b"></div>
-            <div class="box a"></div>
-            <div class="box icon"><i class="fas fa-camera fa-7x"></i></div>
-            <div class="box b"><span> ⟵ </span><a href="http://instagram.com/photosbyanasian">Seasoned Freelance Photographer</a></div>
-            <div class="box a"><a href="http://soundcloud.com/bbrraannonn">Multi-genre Music Producer</a><span> ⟶ </span></div>
-            <div class="box icon"><i class="fas fa-headphones-alt fa-7x"></i></div>
-            <div class="box b"></div>
+            <div class="box" data-aos="zoom-out-down">
+                <a href="https://github.com/BranonConor" target="_blank">
+                    <i class="fas fa-laptop-code"></i>
+                </a>
+                <h3>Aspiring Web Developer</h3>
+            </div>
+            <div class="box" data-aos="zoom-out-down">
+                <a href="http://instagram.com/photosbyanasian" target="_blank">
+                    <i class="fas fa-camera"></i>
+                </a>
+                <h3>Seasoned Freelance Photographer</h3>
+            </div>
+            <div class="box" data-aos="zoom-out-down">
+                <a href="http://soundcloud.com/bbrraannonn" target="_blank">
+                    <i class="fas fa-headphones-alt"></i>
+                </a>
+                <h3>Music Producer</h3>
+            </div>
+            <div class="box" data-aos="zoom-out-down">
+                <a href="http://tmsmind.com" target="_blank">
+                    <i class="fas fa-brain"></i>
+                </a>
+                <h3>Neuropsychiatric Clinic Manager</h3>
+            </div>
         </div>
-    </div>  
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerItem"></div>
+        <div class="footerItem"></div>
+        <div class="footerItem"></div>
+    </div>
+
     <!-- Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="portfolio.js"></script>
 </body>
