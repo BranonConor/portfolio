@@ -1,7 +1,15 @@
+/* -- Palette -- */
+/*
+Pewter Blue: #8DACB5;
+
+*/
+
 html {
     width: 100%;
+    margin: 0px;
+    padding: 0px; 
     height: auto;
-    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,8 +19,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-    width: 100%;
-    height: auto;
 }
 
 
@@ -24,7 +30,6 @@ body {
     color: white;
     width: 100%;
     padding-top: 5px;
-    border-bottom: 0.5px solid lightgrey;
     z-index: 1;
 }
 .changeColor {
@@ -128,7 +133,21 @@ i:hover {
     transition: 0.5s;
     color: orange;
 }
-
+/* -- Skill Cards -- */
+.skillContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+}
+.skillCard {
+    background: #8DACB5;
+    padding: 20px;
+    margin: 20px;
+    height: auto;
+}
 
 /* -- Footer -- */
 .footer {
