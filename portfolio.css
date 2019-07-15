@@ -1,9 +1,18 @@
+html {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     background: url(https://images.unsplash.com/photo-1550785116-fe550d4904cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -15,7 +24,8 @@ body {
     color: white;
     width: 100%;
     padding-top: 5px;
-    border: 0.5px solid lightgrey;
+    border-bottom: 0.5px solid lightgrey;
+    z-index: 1;
 }
 .changeColor {
     opacity: .65;
@@ -39,15 +49,17 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    border-bottom: 0.25px solid lightgrey;
 }
 .brand {
     font-size: 20px;
     text-align: center;
-    padding-top: 6px;
-    padding-left: 20px;
+    padding: 6px 20px;
     margin: 10px 10px;
     color: white;
+    border-right: 1px solid lightgrey;
+}
+.brandIcon {
+    font-size: 1.25rem;
 }
 .button:hover {
     background: grey;
@@ -73,9 +85,9 @@ body {
 .grid2 {
     display: grid;
     margin-top: 30px;
-    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 150px;
+    grid-row-gap: 200px;
     padding: 10px;
     text-align: center;
     justify-content: center;
@@ -95,55 +107,34 @@ body {
     font-size: 70px;
     text-align: center;
 }
-.one i {
-    margin: 50px 50px;
-    padding-bottom: 10px;
-    animation: pulse 3s infinite;
-}
-.icon {
-    animation: pulse 3s infinite;
-    padding-bottom: 10px;
-}
-@keyframes pulse {
-    0% {
-      color: white;
-    }
-    25% {
-      color: rgb(247, 160, 154);
-    }
-    50% {
-        color: white;
-      }
-    75% {
-      color: rgb(121, 191, 238);
-    }
-    100% {
-        color: white;
-    }
-}
 .one p {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin: 20px 70px;
 }
 hr {
     width: 30%;
     margin-bottom: 400px;
 }
-.a {
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.b {
-    text-align: left;
-    font-size: 28px;
-    font-weight: bold;
-}
 a {
     text-decoration: none;
     color: white;
 }
-a:hover {
-    color: rgb(247, 160, 154);
-    font-style: italic;
+i {
+    transition: 0.5s;
+    font-size: 6rem;
+}
+i:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+    color: orange;
+}
+
+
+/* -- Footer -- */
+.footer {
+    display: inline-grid;
+    background: black;
+    padding: 50px;
+    width: 100%;
+    height: auto;
 }
