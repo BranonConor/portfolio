@@ -53,18 +53,22 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.25rem;
 }
 .brand {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
-    padding: 6px 20px;
+    padding: 10px 20px;
     margin: 10px 10px;
     color: white;
     border-right: 1px solid lightgrey;
 }
 .brandIcon {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+.brandIcon:hover {
+    transform: rotate(360deg) scale(1.75);
+    transition: 0.75s;
 }
 .button:hover {
     background: grey;
@@ -72,7 +76,8 @@ body {
 
 /* --- CONTENT --- */
 .container {
-    width: 100%
+    width: 100%;
+    margin-bottom: 50x;
 }
 .grid1 {
     display: grid;
@@ -134,21 +139,42 @@ i:hover {
     color: orange;
 }
 /* -- Skill Cards -- */
-.skillContainer {
+.jumbotron {
+    background: #92b4b4;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 250px;
+}
+.jumboGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     margin: 40px auto;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    text-align: center;
+}
+.skillContainer {
+    margin: 40px auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    list-style: none;
 }
 .skillCard {
-    background: #8DACB5;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     height: auto;
 }
-
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+ul {
+    padding: 0;
+}
 /* -- Footer -- */
 .footer {
     display: inline-grid;
@@ -156,4 +182,6 @@ i:hover {
     padding: 50px;
     width: 100%;
     height: auto;
+    margin: 0;
 }
+
