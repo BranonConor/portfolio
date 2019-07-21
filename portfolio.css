@@ -106,9 +106,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
     margin-top: 30px;
-    padding: 10px;
+    padding: 300px 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -123,11 +123,11 @@ body {
 }
 .hidden {
     visibility: hidden;
+    background: rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
 .hover1:hover~.hidden1 {
     visibility: visible;
-    transition: 1s;
 }
 .hover2:hover~.hidden2 {
     visibility: visible;
@@ -138,15 +138,7 @@ body {
 .hover4:hover~.hidden4 {
     visibility: visible;
 }
-/* -- Psuedo Classes for revealing/hiding elements -- */
-.reveal {
-    display: block;
-    transition: 0.5s;
-}
-.hide {
-    display: none;
-    transition: 0.5s;
-}
+
 
 .one  {
     grid-column-start: 1;
@@ -168,7 +160,7 @@ a {
 }
 .fas {
     transition: 0.8s;
-    font-size: 5rem;
+    font-size: 6rem;
     border-radius: 50%;
     color: black;
 }
@@ -190,7 +182,10 @@ a {
     }
     40% {
         color: white;
-        transform: scale(1.20);
+        transform: rotate(10deg) scale(1.20);
+    }
+    50% {
+        color: lightblue;
     }
     60% {
         color: lightblue;
@@ -240,12 +235,23 @@ h3 {
 }
 ul {
     padding: 0;
+    list-style: none;
 }
 /* -- Footer -- */
 .footer {
-    display: inline-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background: black;
     width: 100%;
     height: auto;
     margin: 0;
+    color: white;
+    text-align: center;
+}
+ol {
+    padding: 0;
+    list-style: none;
+}
+li {
+    display: inline;
 }
