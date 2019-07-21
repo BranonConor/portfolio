@@ -18,9 +18,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
     margin: 0;
 }
-
+.hoverWrapper {
+    transition: 0.5s;
+}
+.hoverWrapper:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 /* --- NAVBAR --- */
 .navbar {
@@ -65,10 +73,12 @@ body {
 }
 .brandIcon {
     font-size: 1.5rem;
+    transition: 0.5s;
 }
 .brandIcon:hover {
-    transform: rotate(360deg) scale(1.75);
-    transition: 0.75s;
+    transform: rotate(360deg) scale(1.5);
+    transition: 0.5s;
+    color: orange;
 }
 .button:hover {
     background: grey;
@@ -89,28 +99,55 @@ body {
     text-align: center;
     justify-content: center;
     margin-bottom: 10px;
-    margin-bottom: 10px;
     width: auto;
 }
 .grid2 {
     display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 200px;
+    grid-row-gap: 10px;
+    margin-top: 30px;
     padding: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 400px;
 }
 .box {
     /*background-color: rgba(0,0,0,.5);*/
     color: white;
     border-radius: 5px;
     font-size: 20px;
+    transition: 1s;
 }
+.hidden {
+    visibility: hidden;
+    transition: 0.5s;
+}
+.hover1:hover~.hidden1 {
+    visibility: visible;
+    transition: 1s;
+}
+.hover2:hover~.hidden2 {
+    visibility: visible;
+}
+.hover3:hover~.hidden3 {
+    visibility: visible;
+}
+.hover4:hover~.hidden4 {
+    visibility: visible;
+}
+/* -- Psuedo Classes for revealing/hiding elements -- */
+.reveal {
+    display: block;
+    transition: 0.5s;
+}
+.hide {
+    display: none;
+    transition: 0.5s;
+}
+
 .one  {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -129,14 +166,43 @@ a {
     text-decoration: none;
     color: white;
 }
-i {
-    transition: 0.5s;
-    font-size: 6rem;
+.fas {
+    transition: 0.8s;
+    font-size: 5rem;
+    border-radius: 50%;
+    color: black;
 }
-i:hover {
-    transform: scale(1.25);
-    transition: 0.5s;
-    color: orange;
+.fas:hover {
+    transform: scale(1.20);
+    transition: 0.8s;
+    border: none;
+    color: white;
+    animation: hoverColors 2s infinite;
+}
+@keyframes hoverColors {
+    0% {
+        color: lightblue;
+        transform: scale(1.15);
+    }
+    20% {
+        color: orange;
+        transform: scale(1.25);
+    }
+    40% {
+        color: white;
+        transform: scale(1.20);
+    }
+    60% {
+        color: lightblue;
+        transform: rotate(-50deg) scale(1.25);
+    }
+    80% {
+        color: white;
+    }
+    100% {
+        color: white;
+        transform: rotate(360deg) scale(1);
+    }
 }
 /* -- Skill Cards -- */
 .jumbotron {
@@ -144,7 +210,7 @@ i:hover {
     max-width: 100%;
     height: auto;
     padding: 20px;
-    margin-top: 250px;
+    margin-top: 100px;
 }
 .jumboGrid {
     display: grid;
@@ -179,9 +245,7 @@ ul {
 .footer {
     display: inline-grid;
     background: black;
-    padding: 50px;
     width: 100%;
     height: auto;
     margin: 0;
 }
-
