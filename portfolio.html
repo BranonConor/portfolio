@@ -13,9 +13,18 @@
     <div class="navbar">
         <ul class="navlist">
             <li class="item brand"><a href="#">B <i class="fab fa-connectdevelop brandIcon"></i> E</a></li>
-            <a href="#about"><li class="item button">About</li></a>
-            <li class="item button">Contact</li>
-            <li class="item button">Portfolio</li>
+            <a href="#about" class="nombore">
+                <li class="item button">About</li>
+                <span class="slider"></span>
+            </a>
+            <a href="#skills" class="nombore">
+                <li class="item button">Skills</li>
+                <span class="slider"></span>
+            </a>
+            <a href="#about" class="nombore">
+                <li class="item button">Portfolio</li>
+                <span class="slider"></span>
+            </a>
         </ul>
     </div>
 <!-- CONTENT -->
@@ -74,38 +83,50 @@
         </div>
     </div>
     <!-- Skills Cards -->
-    <div class="jumbotron">
-        <h3 data-aos="fade-up">My front-end skill stacks:</h3>
+    <div class="jumbotron" id="skills">
+        <h2 data-aos="fade-down-right">My front-end skills:</h2>
+        <hr data-aos="fade-down-left">
         <div class="jumboGrid">
-            <ul class="skillContainer">
+            <div class="skillContainer" data-aos="fade-down-right">
                 <div class="hoverWrapper">
-                    <p>Coding Languages</p>
-                    <li></li>
-                    <li></li>
+                    <h3>Coding Languages</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
                 </div>
-            </ul>
-            <ul class="skillContainer">
+            </div>
+            <div class="skillContainer" data-aos="fade-down">
                 <div class="hoverWrapper">
-                    <p>Libraries/Frameworks</p>
-                    <li></li>
-                    <li></li>
+                    <h3>Libraries / Frameworks</h3>
+                    <p>Bootstrap</p>
+                    <p>jQuery</p>
+                    <p>React</p>
                 </div>
-            </ul>
-            <ul class="skillContainer">
+            </div>
+            <div class="skillContainer" data-aos="fade-down">
                 <div class="hoverWrapper">
-                    <p>Developer Tools</p>
-                    <li></li>
-                    <li></li>
+                    <h3>Developer Tools</h3>
+                    <p>Visual Studio Code</p>
+                    <p>GitHub</p>
+                    <p>CodePen</p>
                 </div>
-            </ul>
-            <ul class="skillContainer">
-                <p>Adobe</p>
-                <li></li>
-                <li></li>
-            </ul>
+            </div>
+            <div class="skillContainer" data-aos="fade-down-right">
+                <div class="hoverWrapper">
+                    <h3>Adobe</h3>
+                    <p>Photoshop</p>
+                    <p>Lightroom</p>
+                </div>
+            </div>
         </div>
     </div>
-
+    <!-- Contact -->
+    <div class="containerTwo">
+        <h2>Contact</h2>
+        <p><input type="text" placeholder="Email"></p>
+        <p><input type="text" placeholder="Leave me a message!"></p>
+        <p><input type="button" class="submit" value="Submit"></p>
+    </div>
     <!-- Footer -->
     <div class="footer">
         <div class="footerItem">
@@ -114,9 +135,14 @@
         <div class="footerItem">
             <p>Socials:</p>
             <ol>
-                <li><a href="https://www.instagram.com/photosbyanasian/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li><a href="https://github.com/BranonConor" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                <li></li>
+                <li><a href="https://www.instagram.com/photosbyanasian/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                </li>
+                <li><a href="https://github.com/BranonConor" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li><a href="#" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a>
+                </li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
             </ol>
         </div>
         <div class="footerItem"></div>
