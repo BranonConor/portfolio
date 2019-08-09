@@ -317,7 +317,7 @@ p {
     max-width: 100%;
     height: auto;
     padding-top: 190px;
-    padding-bottom: 190px;
+    padding-bottom: 100px;
     margin: 0;
 }
 input {
@@ -337,6 +337,16 @@ input {
 }
 .submit:hover {
     background: #dDACB5;
+    transition: 0.5s;
+}
+.fa-angle-double-up {
+    padding-top: 50px;
+    color: black;
+    transition: 0.5s;
+}
+.fa-angle-double-up:hover {
+    color: white;
+    transform: scale(1.10);
     transition: 0.5s;
 }
 
