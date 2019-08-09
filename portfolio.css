@@ -79,6 +79,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 1.25rem;
+    transition: 0.5s;
 }
 .brand {
     font-size: 1.25rem;
@@ -119,6 +120,18 @@ body {
 .nombore:hover span {
       color: white;
 }
+.navbar-socials {
+    float: right;
+}
+.swell {
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+.swell:hover {
+    transform: scale(2);
+    color: orange;
+    transition: 0.5s;
+}
 /* --- CONTENT --- */
 .container {
     width: 100%;
@@ -126,10 +139,10 @@ body {
 }
 .grid1 {
     display: grid;
-    margin-top: 60px;
+    margin-top: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 200px;
-    padding-top: 175px;
+    padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
     justify-content: center;
@@ -139,6 +152,14 @@ body {
 h1 {
     color: black;
 }
+.fa-hand-point-down {
+    color: black;
+}
+.fa-hand-point-down:hover {
+    color: white;
+    transform: scale(1.10);
+    transition: 0.5s;
+}
 .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -146,7 +167,7 @@ h1 {
     grid-column-gap: 10px;
     grid-row-gap: 30px;
     margin-top: 30px;
-    padding: 450px 10px 100px 10px;
+    padding: 400px 10px 100px 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -195,14 +216,14 @@ a {
     text-decoration: none;
     color: white;
 }
-.fas {
+.main-icon {
     transition: 0.8s;
     font-size: 6rem;
     border-radius: 50%;
     color: black;
 }
-.fas:hover {
-    transform: scale(1.20);
+.main-icon:hover {
+    transform: scale(1.3);
     transition: 0.8s;
     border: none;
     color: white;
@@ -268,6 +289,7 @@ a {
 h2 {
     text-align: center;
     font-size: 2.5rem;
+    color: black;
 }
 h3 {
     color: black;
@@ -282,14 +304,19 @@ p {
     transition: 0.5s;
     text-align: center;
     margin: 10px auto;
+    color: black;
+}
+.skill-icon {
+    transform: scale(2.5);
+    padding: 20px;
 }
 /* -- Contact -- */
 .containerTwo {
     background: none;
     max-width: 100%;
     height: auto;
-    padding-top: 400px;
-    padding-bottom: 250px;
+    padding-top: 190px;
+    padding-bottom: 190px;
     margin: 0;
 }
 input {
@@ -323,6 +350,9 @@ input {
     color: white;
     text-align: center;
 }
+.footer-text {
+    color: white;
+}
 ol {
     padding: 0;
     list-style: none;
@@ -330,4 +360,6 @@ ol {
 li {
     display: inline;
 }
-
+.fa-2x {
+    padding: 10px;
+}
