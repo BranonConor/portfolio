@@ -154,6 +154,7 @@ h1 {
 }
 .fa-angle-double-down {
     color: black;
+    transition: 0.5s;
 }
 .fa-angle-double-down:hover {
     color: white;
