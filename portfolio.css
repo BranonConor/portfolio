@@ -152,10 +152,10 @@ body {
 h1 {
     color: black;
 }
-.fa-hand-point-down {
+.fa-angle-double-down {
     color: black;
 }
-.fa-hand-point-down:hover {
+.fa-angle-double-down:hover {
     color: white;
     transform: scale(1.10);
     transition: 0.5s;
