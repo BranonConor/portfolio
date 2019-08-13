@@ -294,7 +294,7 @@ a {
     height: auto;
     text-align: center;
     list-style: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 5%;
 }
 .skillCard {
@@ -330,7 +330,7 @@ p {
 .skill-icon {
     transform: scale(2.5);
     padding: 20px;
-    color: #fDACB5;
+    color: #dDACB5;
 }
 /* -- Contact -- */
 .containerTwo {
@@ -395,4 +395,3 @@ li {
 .fa-2x {
     padding: 10px;
 }
-
