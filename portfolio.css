@@ -137,8 +137,8 @@ body {
     width: 100%;
     height: auto;
     margin: 200px 0 50px 0;
-    padding: 100px 0;
-    min-height: 300px;
+    padding: 75px 0;
+    min-height: 200px;
     background-color: rgba(0, 0, 0, 0.2);
     background-image: -webkit-linear-gradient(30deg, transparent 50%, rgb(0, 0, 0) 50%);
     display: grid;
@@ -226,24 +226,6 @@ h1 {
     font-size: 20px;
     transition: 1s;
 }
-.hidden {
-    visibility: hidden;
-    background: rgba(0, 0, 0, 0.1);
-    transition: visibility 1s ease;
-}
-.hover1:hover~.hidden1 {
-    visibility: visible;
-}
-.hover2:hover~.hidden2 {
-    visibility: visible;
-}
-.hover3:hover~.hidden3 {
-    visibility: visible;
-}
-.hover4:hover~.hidden4 {
-    visibility: visible;
-}
-
 .one  {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -272,7 +254,6 @@ a {
     animation: shake 0.5s infinite;
     transition: 0.5s;
     color: white;
-    font-size: 6.5rem;
 }
 
 @keyframes shake {
@@ -308,10 +289,13 @@ a {
 }
 .skillContainer {
     margin: 40px auto;
+    width: 100%;
     max-width: 100%;
     height: auto;
     text-align: center;
     list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
 }
 .skillCard {
     padding: 20px;
@@ -324,9 +308,9 @@ h2 {
     color: black;
 }
 h3 {
-    color: black;
+    color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 ul {
     padding: 0;
@@ -336,7 +320,7 @@ p {
     transition: 0.5s;
     text-align: center;
     margin: 10px auto;
-    color: black;
+    color: white;
 }
 .skill-icon {
     transform: scale(2.5);
