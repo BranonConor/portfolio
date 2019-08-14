@@ -170,15 +170,16 @@ body {
 }
 img {
     position: absolute;
-    top: 0px, left: 100px;
+    top: 775px; 
+    left: 100px;
     padding-left: 100px;
-    width: 40%;
-    height: 68%;
+    width: 35%;
+    height: 85%;
     animation: floating 5s infinite;
 }
 @keyframes floating {
     0% {transform: translateY(0px);}
-    50% {transform: translateY(30px);}
+    50% {transform: translateY(25px);}
     100% {transform: translateY(0px);}
 }
 
