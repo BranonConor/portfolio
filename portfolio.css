@@ -1,0 +1,552 @@
+/* -- Palette -- */
+/*
+Pewter Blue: #8DACB5;
+
+*/
+/* - Large Screens - */
+@media only screen and (max-width: 1824px) {
+    html {
+        width: 100%;
+        margin: 0px;
+        padding: 0px; 
+        height: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'PT Sans', sans-serif;
+        background: linear-gradient(56deg, #ff9e9e, #ffbf65, #dba2f5, #88dbe4);
+        background-size: 150% 150%;
+        -webkit-animation: AnimationName 27s ease infinite;
+        -moz-animation: AnimationName 27s ease infinite;
+        animation: AnimationName 27s ease infinite;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 36%}
+        50%{background-position:100% 65%}
+        100%{background-position:0% 36%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 36%}
+        50%{background-position:100% 65%}
+        100%{background-position:0% 36%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:0% 36%}
+        50%{background-position:100% 65%}
+        100%{background-position:0% 36%}
+    }
+    .hoverWrapper {
+        transition: 0.5s;
+    }
+    .hoverWrapper:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+    
+    /* --- NAVBAR --- */
+    .navbar {
+        background: black;
+        position: fixed;
+        top: 0px;
+        color: white;
+        width: 100%;
+        padding-top: 5px;
+        z-index: 1;
+    }
+    .changeColor {
+        opacity: .65;
+        color: black;
+        transition: 0.7s all;
+    }
+    .navlist {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li {
+        display: inline;
+        float: left;
+    }
+    .button {
+        background-color: black;
+        color: white;
+        padding: 20px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.25rem;
+        transition: 0.5s;
+    }
+    .brand {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 10px 10px;
+        color: white;
+        border-right: 1px solid lightgrey;
+    }
+    .brandIcon {
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+    .brandIcon:hover {
+        transform: rotate(360deg) scale(1.5);
+        transition: 0.5s;
+        color: orange;
+    }
+    .slider {
+        position: absolute;
+        display: block;
+        left: 0;
+        top:90%;
+        margin:0 auto;
+        height: 2px;
+        background-color: white;
+        width: 0%;
+        transition: width 0.5s ease;
+    }
+    .nombore{
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease-out;
+    }
+    .nombore:hover .slider {
+        width: 100%;
+    }
+    .nombore:hover span {
+          color: white;
+    }
+    .navbar-socials {
+        float: right;
+    }
+    .swell {
+        transform: scale(1.15);
+        transition: 0.5s;
+    }
+    .swell:hover {
+        transform: scale(2);
+        color: orange;
+        transition: 0.5s;
+    }
+    /* -- About Jumbotron -- */
+    .about-jumbotron {
+        width: 100%;
+        height: auto;
+        margin: 200px 0 50px 0;
+        padding: 75px 0px;
+        min-height: 200px;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-image: -webkit-linear-gradient(30deg, transparent 50%, rgb(0, 0, 0) 50%);
+        display: grid;
+        grid-template-columns: 1.8fr 1.2fr;
+    }
+    .about-title {
+        font-size: 2rem;
+        text-align: left;
+        color: white;
+        letter-spacing: 9px;
+    }
+    .about-p {
+        text-align: left;
+        font-size: 1rem;
+        color: white;
+        padding-right: 90px;
+        padding-bottom: 10px;
+    }
+    .about-hr {
+        border-color: white;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    /* --- CONTENT --- */
+    .container {
+        width: 100%;
+        margin-bottom: 50x;
+    }
+    img {
+        position: absolute;
+        top: 775px; 
+        left: 100px;
+        padding-left: 100px;
+        width: 35%;
+        height: 85%;
+        animation: floating 5s infinite;
+    }
+    @keyframes floating {
+        0% {transform: translateY(0px);}
+        50% {transform: translateY(25px);}
+        100% {transform: translateY(0px);}
+    }
+    
+    
+    .grid1 {
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 200px;
+        padding-top: 110px;
+        padding-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    h1 {
+        color: black;
+    }
+    .fa-angle-double-down {
+        color: black;
+        transition: 0.5s;
+    }
+    .fa-angle-double-down:hover {
+        color: white;
+        transform: scale(1.10);
+        transition: 0.5s;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
+        padding: 15px 10px 10px 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 125px;
+    }
+    .box {
+        /*background-color: rgba(0,0,0,.5);*/
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 1s;
+    }
+    .one  {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 70px;
+        text-align: center;
+    }
+    .one p {
+        font-size: 1.5rem;
+        margin: 20px 70px;
+    }
+    hr {
+        width: 30%;
+        border-color: black;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .main-icon {
+        transition: 0.5s;
+        font-size: 6rem;
+        border-radius: 50%;
+        color: black;
+    }
+    .main-icon:hover {
+        animation: shake 0.5s infinite;
+        transition: 0.5s;
+        color: white;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: rotate(3deg);
+            transform-origin: center;
+        }
+        50% {
+            transform: rotate(-3deg);
+            transform-origin: center;
+        }
+        100% {
+            transform: rotate(3deg);
+            transform-origin: center;
+        }
+    }
+    /* -- Skill Cards -- */
+    .jumbotron {
+        background: none;
+        max-width: 100%;
+        height: auto;
+        padding: 100px 20px 80px 20px;
+        margin-top: 100px;
+    }
+    .jumboGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 40px auto;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .skillContainer {
+        margin: 40px auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        list-style: none;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 5%;
+    }
+    .skillCard {
+        padding: 20px;
+        margin: 0;
+        height: auto;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+    }
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    p {
+        transition: 0.5s;
+        text-align: center;
+        margin: 10px auto;
+        color: white;
+    }
+    .black {
+        color: black;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    .skill-icon {
+        transform: scale(2.5);
+        padding: 20px;
+        color: #dDACB5;
+    }
+    /* -- Contact -- */
+    .containerTwo {
+        background: none;
+        max-width: 100%;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        margin: 0;
+    }
+    input {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        width: 20%;
+        background: #dDACB5;
+        border: none;
+        color: white;
+    }
+    .submit {
+        width: 10%;
+        background: black;
+        color: white;
+        transition: 0.5s;
+    }
+    .submit:hover {
+        background: #dDACB5;
+        transition: 0.5s;
+    }
+    .fa-angle-double-up {
+        padding-top: 50px;
+        color: black;
+        transition: 0.5s;
+    }
+    .fa-angle-double-up:hover {
+        color: white;
+        transform: scale(1.10);
+        transition: 0.5s;
+    }
+    
+    /* -- Footer -- */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: black;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        color: white;
+        text-align: center;
+    }
+    .footer-text {
+        color: white;
+    }
+    ol {
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline;
+    }
+    .fa-2x {
+        padding: 10px;
+    }
+}
+/* Desktop and Laptops - */
+
+/* iPads and Tablets - */
+@media only screen and (max-width: 850px) {
+    .txt-rotate {
+        display: none;
+    }
+    img {
+        position: absolute;
+        top: 900px; 
+        left: 220px;
+        padding-left: 0;
+        width: 70%;
+        height: 85%;
+        animation: floating 5s infinite;
+    }
+    .about-jumbotron {
+        width: 100%;
+        height: 550px;
+        margin: 200px 0 10px 0;
+        padding: 75px 0px;
+        min-height: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: -webkit-linear-gradient(30deg, transparent 50%, rgb(0, 0, 0) 50%);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-title {
+        padding-left: 4%;
+    }
+    .about-hr {
+        margin-left: 4%;
+    }
+    .about-p {
+        padding-right: 50%;
+        padding-left: 4%;
+    }
+    .mobile-box {
+        height: 208px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .navbar-socials {
+        display: none;
+    }
+}
+/* - Mobile / Smartphones - */
+@media only screen and (max-width: 400px) {
+    html {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        padding-top: 10px;
+    }
+    .button {
+        font-size: 1rem;
+        padding: 20px 12px;
+    }
+    .grid1 {
+        padding-top: 30px;
+    }
+    img {
+        position: absolute;
+        top: 800px;
+        left: 20px;
+        padding: 0;
+        margin: 0;
+        width: 85%;
+        height: 70%;
+        animation: floating 5s infinite;
+    }
+    .mobile-header {
+        font-size: 6rem;
+    }
+    .txt-rotate {
+        display: none;
+    }
+    .about-jumbotron {
+        width: 100%;
+        height: 350px;
+        margin: 200px 0 0px 0;
+        padding: 75px 0px;
+        min-height: 200px;
+        background: black;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-title {
+        position: relative;
+        top: 190px;
+        text-align: center;
+        padding: 0;
+    }
+    .about-hr {
+        position: relative;
+        top: 190px;
+        width: 47%;
+        margin-left: 25%;
+    }
+    .about-p {
+        display: none;
+    }
+    .main-icon {
+        font-size: 3rem;
+    }
+    .grid2 {
+        margin-bottom: 50px;
+    }
+    h2 {
+        padding-top: 100px;
+    }
+    h3 {
+        font-size: 0.7rem;
+    }
+    .jumbotron {
+        padding: 0px;
+    }
+    .jumboGrid {
+        margin: 0;
+        grid-gap: 2px;
+    }
+    .containerTwo {
+        padding-top: 60px;
+    }
+    .skillContainer {
+        border-radius: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .black {
+        font-size: 1rem;
+    }
+    .submit {
+        width: 25%;
+    }
+    .footer-text {
+        display: none;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 10px 0px;
+    }
+    ol {
+        display: inline;
+    }
+}
