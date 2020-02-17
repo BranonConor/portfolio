@@ -464,11 +464,19 @@ Pewter Blue: #8DACB5;
         padding: 20px 12px;
     }
     .grid1 {
+<<<<<<< HEAD
         padding-top: 30px;
     }
     img {
         position: absolute;
         top: 800px;
+=======
+        padding-top: 60px;
+    }
+    img {
+        position: absolute;
+        top: 820px;
+>>>>>>> e54f245866cd601e949379894f0861871473c14a
         left: 20px;
         padding: 0;
         margin: 0;
