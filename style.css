@@ -5,7 +5,26 @@ Desert Sand: #E8C7AB;
 Lavender: #BC9CB0;
 PINK: #dDACB5;
 */
-/* - Large Screens - */
+/*
+ ios workaround for fixed scrolling
+.background {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    overflow: scroll;
+    width: 100vw;
+    height: 100%;
+    background-image: url(background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+*/
 html {
     width: 100%;
     margin: 0px;
@@ -63,21 +82,7 @@ a {
     transform: scale(1.05);
     transition: 0.5s;
 }
-/*---------- iOS WORKAROUND ----------- */
-.background {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: -1;
-    overflow: scroll;
-    max-width: 100vw;
-    height: 100%;
-    background-image: url(background3.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 /* ----------------- NAVBAR ------------------ */
 .navbar {
     background: black;
@@ -566,16 +571,41 @@ li {
     }
 }
 @media only screen and (max-width: 500px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
     .circles {
         width: 100vw;
         height: auto;
         top: 30%;
     }
+    .icon-link {
+        background-image: url(background3-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .icon-link::after {
+        background-image: url(background3-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    input, select, textarea {
+        background-image: url(background3-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .skill-card {
+        height: 300px;
+        padding: 5px;
+    }
 }
 @media only screen and (max-width: 450px) {
     body {
         font-family: 'PT Sans', sans-serif;
-        background-image: url(background3.png);
+        background-image: url(background3-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
