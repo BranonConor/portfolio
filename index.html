@@ -14,15 +14,15 @@
     <div class="navbar">
         <ul class="navlist">
             <li class="item brand"><a href="#">B <i class="fab fa-connectdevelop brandIcon"></i> C</a></li>
-            <a href="#about" class="nombore">
+            <a href="#about" class="navlink">
                 <li class="item button">About</li>
                 <span class="slider"></span>
             </a>
-            <a href="#skills" class="nombore">
+            <a href="#skills" class="navlink">
                 <li class="item button">Skills</li>
                 <span class="slider"></span>
             </a>
-            <a href="#contact" class="nombore">
+            <a href="#contact" class="navlink">
                 <li class="item button">Contact</li>
                 <span class="slider"></span>
             </a>
@@ -39,133 +39,125 @@
             </div>
         </ul>
     </div>
-<!-- CONTENT -->
-    <!-- Heading -->
-    <div class="container">
-        <div class="grid1">
-            <div class="box one">
-                <h1 class="mobile-header">Branon 
-                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Conor.", "Conor.", "Conor.", "Conor.", "Conor." ]'></span>
-                </h1>
-                <hr>
-                <p>I'm a front-end web developer, among many things.</p>
-                <p>I'm an aspiring front-end developer, among many things.</p>
-                <p>Welcome to my portfolio.</p>
-                <p><a href="#about"><i class="fas fa-angle-double-down fa-3x"></i></a></p>
-            </div>
+<!-------- CONTENT ---------->
+    <!-------------- Heading --------------->
+    <div class="hero-strip">
+        <div class="images">
+            <img src="branonconor.png" alt="" class='branon-conor'>
+            <img src="circles.PNG" alt="" class='circles'>
         </div>
-    <!-- About Me Jumbotron -->
-        <div id="about" class="about-jumbotron">
-            <div>
-                <img src="branon-portrait-md.png">
-            </div>
-            <div data-aos="zoom-out-left" data-aos-duration="1400">
-                <p class="about-title">BRANON CONOR EUSEBIO</p>
-                <hr class="about-hr">
-                <p class="about-p">I'm a multifaceted person.</p>
-                <p class="about-p">I'm passionate about scientific processes and problem-solving. With a degree in behavioral neuroscience, I employ a thorough understanding of human behavior and systems to tackle problems as the manager of a neuropsychiatric clinic.</p>
-                <p class="about-p">I'm currently building a strong foundation for web development to better combine my problem solving skills and my creative drive in the production of beautiful and functional web applications.</p>
-                <p class="about-p">On the side, I am amidst many creative pursuits. I am an award-winning freelance photographer, a music producer and singer/songwriter.</p>
-                <p class="about-p">Between these passion I like to baske in the goodness life has to offer. This usually entails a healthy amount of coffee, exercise, time with friends and family, and trips to the beach or the mountains.</p>
-            </div>
+        <hr>
+        <h1>I'm a web developer.</h1>
+        <p>Welcome to my portfolio.</p>
+        <p><a href="#about"><i class="fas fa-angle-double-down fa-3x"></i></a></p>
+    </div>
+    <!------------------ About -------------------->
+    <div id="about" class="about"> 
+        <!-- <img src="branon-portrait-md.png"> -->
+        <div data-aos="zoom-out-left" data-aos-duration="1400" class='about-info'>
+            <p class="about-title">BRANON CONOR EUSEBIO</p>
+            <hr>
+            <p>I'm a multifaceted person.</p>
+            <p>I'm passionate about scientific processes and problem-solving. With a degree in behavioral neuroscience, I employ a thorough understanding of human behavior and systems to tackle problems as the manager of a neuropsychiatric clinic.</p>
+            <p>I'm currently employed as a web engineer and digital marketer, and I have experience with various freelance web development and design projects too.</p>
+            <p>On the side, I like to maintain creative outlets and hobbies! I am an award-winning freelance photographer, a music producer and singer/songwriter. I keep a healthy amount of coffee on hand at all times, I love to exercise, and I'm always making time for friends and family or Saturday morning pick-up beach sports.</p>
         </div>
-    <!-- Icons -->
-        <div class="grid2">
-            <div class="box mobile-box" data-aos="fade-down" data-aos-duration="1000">
+        <div class="links">
+            <div class="icon-link" data-aos="fade-down" data-aos-duration="1000">
                 <a href="https://github.com/BranonConor" target="_blank">
                     <i class="fas fa-laptop-code main-icon"></i>
-                    <h3>Aspiring Web Developer</h3>
                 </a>
             </div>
-            <div class="box mobile-box" data-aos="fade-down" data-aos-duration="1300">
+            <div class="icon-link" data-aos="fade-down" data-aos-duration="1300">
                 <a href="http://instagram.com/photosbyanasian" target="_blank">
                     <i class="fas fa-camera main-icon"></i>
-                    <h3>Freelance Photographer</h3>
                 </a>
             </div>
-            <div class="box mobile-box" data-aos="fade-down" data-aos-duration="1600">
+            <div class="icon-link" data-aos="fade-down" data-aos-duration="1600">
                 <a href="http://soundcloud.com/bbrraannonn" target="_blank">
                     <i class="fas fa-headphones-alt main-icon"></i>
-                    <h3>Music Producer</h3>
                 </a>
             </div>
-            <div class="box mobile-box" data-aos="fade-down" data-aos-duration="1900">
+            <div class="icon-link" data-aos="fade-down" data-aos-duration="1900">
                 <a href="https://www.linkedin.com/in/branon-eusebio-b2655ba8/" target="_blank">
                     <i class="fas fa-brain main-icon"></i>
-                    <h3>Neuropsychiatric Technician</h3>
                 </a>
             </div>
         </div>
     </div>
-    <!-- Skills Cards -->
-    <div class="jumbotron" id="skills">
-        <h2 data-aos="fade-left">My Front-End Skills</h2>
+    <!------- Skills Cards ----------->
+    <div class="skills" id="skills">
+        <h2 data-aos="fade-left">My Skills</h2>
         <hr data-aos="fade-right" data-aos-duration="2000">
-        <div class="jumboGrid">
-            <div class="skillContainer" data-aos="fade-up" data-aos-duration="850">
-                <div class="hoverWrapper">
-                    <h3>Coding Languages</h3>
-                    <hr>
-                    <p><i class="fas fa-code skill-icon"></i></p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                </div>
+        <div class="card-container">
+            <div class="skill-card">
+                <h3>Coding Languages</h3>
+                <p><i class="fas fa-code skill-icon"></i></p>
+                <p>HTML</p>
+                <p>CSS</p>
             </div>
-            <div class="skillContainer" data-aos="fade-up" data-aos-duration="1100">
-                <div class="hoverWrapper">
-                    <h3>Frameworks</h3>
-                    <hr>
-                    <p><i class="fas fa-book-open skill-icon"></i></p>
-                    <p>Bootstrap</p>
-                    <p>jQuery</p>
-                    <p>Data-AOS</p>
-                    <p>Express</p>
-                    <p>MongoDB</p>
-                </div>
+            <div class="skill-card">
+                <h3>Frameworks/Other</h3>
+                <p><i class="fas fa-book-open skill-icon"></i></p>
+                <p>Bootstrap</p>
+                <p>jQuery</p>
+                <p>Data-AOS</p>
+                <p>Express</p>
+                <p>HexoJS</p>
+                <p>EJS</p>
             </div>
-            <div class="skillContainer" data-aos="fade-up" data-aos-duration="1650">
-                <div class="hoverWrapper">
-                    <h3>Developer Tools</h3>
-                    <hr>
-                    <p><i class="fas fa-wrench skill-icon"></i></p>
-                    <p>Visual Studio Code</p>
-                    <p>GitHub</p>
-                    <p>Node.js / NPM</p>
-                    <p>GoormIDE</p>
-                    <p>AWS / S3</p>
-                    <p>CodePen</p>
-                </div>
+            <div class="skill-card">
+                <h3>Developer Tools</h3>
+                <p><i class="fas fa-wrench skill-icon"></i></p>
+                <p>Visual Studio Code</p>
+                <p>GitHub</p>
+                <p>Node.js / NPM</p>
+                <p>Netlify</p>
+                <p>CodePen</p>
             </div>
-            <div class="skillContainer" data-aos="fade-up" data-aos-duration="1900">
-                <div class="hoverWrapper">
-                    <h3>Adobe Tools</h3>
-                    <hr>
-                    <p><i class="fab fa-adobe skill-icon"></i></p>
-                    <p>Photoshop</p>
-                    <p>Lightroom</p>
-                </div>
+            <div class="skill-card">
+                <h3>Adobe Skills</h3>
+                <p><i class="fab fa-adobe skill-icon"></i></p>
+                <p>Photoshop</p>
+                <p>Lightroom</p>
             </div>
         </div>
-        <p class="black">A good developer is always learning. In addition to the above technologies, I'm currently learning React, data structures, and Javascript algorithms.</p>
     </div>
-    <!-- Contact -->
-    <div id="contact" class="containerTwo">
-        <h2>Contact Me!</h2>
-        <p>I'm looking forward to hearing from you.</p>
-        <p><input type="text" placeholder="Email"></p>
-        <p><input type="text" placeholder="Leave me a message!"></p>
-        <p><input type="button" class="submit" value="Submit"></p>
-        <p><a href="#"><i class="fas fa-angle-double-up fa-3x"></i></a></p>
-        <p>Back to Top</p>
+    <!----------- AXN CREATIVE ------------>
+    <div class="axn-creative">
+        <video autoplay loop muted id="myVideo">
+            <source src="axn-creative-web-video.MOV" type="video/mp4">
+        </video>
+        <p>I'm currently freelancing as the AXN Creative, or "Axon" Creative. Check out my recent development and design work <a href="https://www.axncreative.com/" target='_blank'>here</a>.</p>
     </div>
-    <!-- Footer -->
+    <!--------------- Contact ----------------->
+    <div class="form-strip" id='contact'>
+        <i class="fas fa-paper-plane fa-2x"></i>
+        <h2>I'd love to hear from you.</h2>
+        <form id="fs-frm" class='contact-form' name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/mgekjggd" method="POST">
+            <fieldset id="fs-frm-inputs">
+                <div class='fieldset-wrapper'>
+                    <div class="name">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="Full Name" required="required">
+                    </div>
+                    <div class="email">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="required">
+                    </div>
+                </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea class ='text-area' rows="5" name="message" id="message" placeholder="Leave me a message." required="required"></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+            </fieldset>
+            <input class='form-button' type="submit" value="Send">
+        </form>
+    </div>
+    <!---------- Footer ------------>
     <div class="footer">
         <div class="footerItem">
-            <p class="footer-text">Copyright: Branon Eusebio 2019</p>
-        </div>
-        <div class="footerItem">
-            <p class="footer-text">Socials</p>
             <ol>
                 <li><a href="https://www.instagram.com/photosbyanasian/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                 </li>
@@ -176,8 +168,8 @@
                 <li><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                 </li>
             </ol>
+            <p>Copyright: Branon Conor Eusebio, 2020</p>
         </div>
-        <div class="footerItem"></div>
     </div>
 
     <!-- Javascript -->
