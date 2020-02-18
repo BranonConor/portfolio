@@ -75,6 +75,7 @@ a {
     max-width: 100vw;
     height: 100%;
     background-image: url(background3.png);
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 /* ----------------- NAVBAR ------------------ */
