@@ -21,6 +21,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transform: translate3d(0,0,0);
     max-width: 100%;
     height: auto;
     margin: 0;
@@ -500,8 +501,26 @@ li {
     .navbar-socials {
         display: none;
     }
+    .about-info {
+        width: 80vw;
+    }
+    .icon-link{
+        width: 80vw;
+    }
+}
+@media only screen and (max-width: 675px) {
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 20%;
+    }
 }
 @media only screen and (max-width: 650px) {
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 23%;
+    }
     .axn-creative p {
         top: 25px;
         font-size: 1.5rem;
@@ -522,6 +541,31 @@ li {
         width: 95%;
     }
 }
+@media only screen and (max-width: 580px) {
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 27.5%;
+    }
+    .navlink li {
+        padding: 23px 20px;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 30%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 33%;
+    }
+}
 @media only screen and (max-width: 400px) {
     html {
         max-width: 100%;
@@ -534,12 +578,14 @@ li {
     .navbar {
         padding-top: 10px;
     }
-    .button {
-        font-size: 1rem;
-        padding: 20px 12px;
+    .navlink li {
+        padding: 20px 15px;
+        font-size: 0.8rem;
     }
-    .grid1 {
-        padding-top: 30px;
+    .circles {
+        width: 100vw;
+        height: auto;
+        top: 35%;
     }
     .mobile-header {
         font-size: 6rem;
