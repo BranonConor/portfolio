@@ -21,7 +21,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transform: translate3d(0,0,0);
     max-width: 100%;
     height: auto;
     margin: 0;
@@ -64,7 +63,23 @@ a {
     transform: scale(1.05);
     transition: 0.5s;
 }
-
+/*---------- iOS WORKAROUND ----------- */
+.background {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    overflow: scroll;
+    width: 100vw;
+    height: 100%;
+    background-image: url(background3.png);
+    background-position: 50% 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* ----------------- NAVBAR ------------------ */
 .navbar {
     background: black;
@@ -560,6 +575,16 @@ li {
     }
 }
 @media only screen and (max-width: 450px) {
+    body {
+        font-family: 'PT Sans', sans-serif;
+        background-image: url(background3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
     .circles {
         width: 100vw;
         height: auto;
