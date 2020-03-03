@@ -110,7 +110,6 @@ i {
     justify-content: center;
     align-items: center;
     height: 80px;
-    width: 80%;
     font-weight: bold;
 }
 .navLink {
@@ -168,6 +167,9 @@ i {
 .social {
     display: flex;
     padding-right: 30px;
+}
+.social a{
+    border: none;
 }
 .social i:hover {
     color: #BC9CB0;
