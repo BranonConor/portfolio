@@ -228,6 +228,7 @@ i {
     height: 350px;
     z-index: 1;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     mix-blend-mode: screen;
     opacity: 0.7;
     transition: 0.6s ease all;
@@ -260,6 +261,7 @@ i {
     transform: translateX(69px) translateY(39px);
     background-image: linear-gradient(to bottom right, #fefefe 0%, #d4a2eb 60%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 5;
 }
 .image {
