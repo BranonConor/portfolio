@@ -184,108 +184,30 @@ i {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    background: black;
+    color: white;
     overflow: hidden;
-    mix-blend-mode: overlay;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#ddd, 0.03) 0%,
-        transparent 100%
-    );
-    background-size: 50px 50px;
-}
-.hero-strip::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url(http://api.thumbr.it/whitenoise-100x100.png);
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    opacity: 0.4;
-    z-index: 10
-}
-.triangles {
-    position: relative;
-    left: -15px;
-    height: 350px;
-    width: 400px;
-}
-.triangles:hover .triangle:not(:nth-of-type(4)) {
-    transform: translateX(13px) translateY(-10px) scale(.71);
-}
-.triangles:hover .triangle:nth-of-type(4) {
-    opacity: 0;
-}
-.triangle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 0;
-    width: 400px;
-    height: 350px;
-    z-index: 1;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    mix-blend-mode: screen;
-    opacity: 0.7;
-    transition: 0.6s ease all;
-    transform-origin: 50% 50%;
-}
-.triangle:nth-child(1) {
-    transform: translateY(-60px) translateX(30px);
-    background-image: linear-gradient(to bottom right, #fefefe 0%, #d4a2eb 60%);
-}
-.triangle:nth-child(2) {
-    transform: translateY(-20px) translateX(-20px);
-    background-image: linear-gradient(to bottom right, #fefefe 0%, var(--secondary-accent) 60%);
-}
-.triangle:nth-child(3) {
-    transform: translateY(10px) translateX(30px);
-    background-image: linear-gradient(to bottom right, #fefefe 0%, #cce5e9 60%);
-}
-.triangle:nth-child(4) {
-    mix-blend-mode: normal;
-    background-image: linear-gradient(
-        to bottom right,
-        rgba(#da5a56, 0.9) 0%,
-        rgba(#2f5056, 0.8) 60%
-    );
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    width: 288px;
-    height: 251px;
-    transform: translateX(69px) translateY(39px);
-    background-image: linear-gradient(to bottom right, #fefefe 0%, #d4a2eb 60%);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    z-index: 5;
 }
 .image {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+} 
 .branon-conor {
-    width: 10vw;
-    height: auto;
+    -webkit-animation: slideshow 15s linear infinite;
+	-moz-animation: slideshow 15s linear infinite;
+    animation: slideshow 15s linear infinite;
     position: relative;
-    top: 300px;
-    z-index: 4;
+    opacity: 1;
 }
-.hero-strip i {
-    transition: 0.4s ease all;
-    position: relative;
-    left: 0;
-    z-index: 3;
-    color: var(--accent-color);
-}
-.hero-strip i:hover {
-    transform: translateY(15px);
-    color: #E8C7AB;
+@keyframes slideshow {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 30%;
+    }
 }
 
 
@@ -333,14 +255,6 @@ i {
     justify-content: center;
     text-align: center;
     margin: 20px;
-    transition: 0.4s ease all;
-    mix-blend-mode: overlay;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(#ddd, 0.03) 0%,
-        transparent 100%
-    );
-    background-size: 50px 50px;
 }
 .icon-link a:hover {
     transform: translateY(-15px);
@@ -641,39 +555,9 @@ li {
     .about-title {
         font-size: 1.8rem;
     }
-    .icon-link {
-        background-image: url(background3-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .icon-link::after {
-        background-image: url(background3-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    input, select, textarea {
-        background-image: url(background3-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
     .skill-card {
         height: 300px;
         padding: 5px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    body {
-        font-family: 'PT Sans', sans-serif;
-        background-image: url(background3-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        max-width: 100%;
-        height: auto;
-        margin: 0;
     }
 }
 @media only screen and (max-width: 400px) {
@@ -709,5 +593,10 @@ li {
     }
     ol {
         display: inline;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
     }
 }
