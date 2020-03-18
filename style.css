@@ -99,6 +99,8 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
 }
 .brand {
     min-width: 150px;
@@ -138,6 +140,8 @@ i {
     width: 100%;
     height: 0px;
     transition: 0.5s ease all;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
 }
 .revealNavMobile {
     -webkit-transition: 0.6s; /* Safari 4+ */
