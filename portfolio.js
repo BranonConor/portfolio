@@ -47,7 +47,7 @@ window.onscroll = function() {
     scrollFunction();
 };
 function scrollFunction() {
-  if (((document.body.scrollTop > 800) && (document.body.scrollTop < 2200)) || ((document.documentElement.scrollTop > 800) && (document.documentElement.scrollTop < 2200))) {
+  if (((document.body.scrollTop > 790) && (document.body.scrollTop < 2100)) || ((document.documentElement.scrollTop > 790) && (document.documentElement.scrollTop < 2100))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "black";
     document.querySelector("img").src = "brand2.png";
@@ -60,7 +60,7 @@ function scrollFunction() {
       icon.classList.remove("black");
       icon.classList.add("white");
     });
-  } else if (((document.body.scrollTop > 2200) && (document.body.scrollTop < 3000)) || ((document.documentElement.scrollTop > 2200) && (document.documentElement.scrollTop < 3000))) {
+  } else if (((document.body.scrollTop > 2100) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "none";
     document.querySelector("img").src = "brand1.png";
