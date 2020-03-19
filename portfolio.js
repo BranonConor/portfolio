@@ -57,7 +57,8 @@ function scrollFunction() {
     });
     let socialLinks = document.querySelectorAll("i");
     socialLinks.forEach(function(icon) {
-      icon.style.color = "white";
+      icon.classList.remove("black");
+      icon.classList.add("white");
     });
   } else if (((document.body.scrollTop > 2200) && (document.body.scrollTop < 3000)) || ((document.documentElement.scrollTop > 2200) && (document.documentElement.scrollTop < 3000))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
@@ -69,7 +70,8 @@ function scrollFunction() {
     });
     let socialLinks = document.querySelectorAll("i");
     socialLinks.forEach(function(icon) {
-      icon.style.color = "black";
+      icon.classList.add("black");
+      icon.classList.remove("white");
     });
   } else {
     document.querySelector(".navbar").style.fontSize = "1.25rem";
@@ -81,7 +83,8 @@ function scrollFunction() {
     });
     let socialLinks = document.querySelectorAll("i");
     socialLinks.forEach(function(icon) {
-      icon.style.color = "white";
+      icon.classList.remove("black");
+      icon.classList.add("white");
     });
   }
 }

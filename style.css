@@ -70,8 +70,13 @@ a {
     transition: 0.5s;
 }
 i {
-    color: white;
     transition: 0.4s ease all;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
 }
 /* ----------------- NAVIGATION ------------------ */
 .nav {
@@ -281,7 +286,6 @@ i {
 .icon-link a:hover i {
     background-color: var(--secondary-accent);
     color: var(--dark-component-color);
-    border-radius: 10px;
 }
 .links i {
     color: var(--accent-color);
