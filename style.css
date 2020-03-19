@@ -410,6 +410,7 @@ i {
     color: #eee;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 .axn a::after {
     content: "LET'S GO!";
@@ -693,9 +694,6 @@ small a {
     }
     .axn img {
         width: 400px;
-    }
-    .axn a {
-        text-decoration: underline;
     }
 }
 @media only screen and (max-width: 400px) {
