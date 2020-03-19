@@ -695,6 +695,11 @@ small a {
     .axn img {
         width: 400px;
     }
+    .axn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media only screen and (max-width: 400px) {
     html {
