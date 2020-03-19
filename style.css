@@ -71,6 +71,7 @@ a {
 }
 i {
     color: white;
+    transition: 0.4s ease all;
 }
 /* ----------------- NAVIGATION ------------------ */
 .nav {
@@ -87,6 +88,7 @@ i {
     justify-content: center;
     align-items: center;
     height: auto;
+    transition: 0.4s ease all;
 }
 .nav h2 {
     font-size: 1.3rem;
@@ -119,6 +121,7 @@ i {
     height: 80px;
     font-weight: bold;
     font-size: 1.25rem;
+    transition: 0.4s ease all;
 }
 .navLink {
     padding: 0 20px;

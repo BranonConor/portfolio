@@ -43,14 +43,45 @@ cards.forEach((item) => {
 
 
 // Scroll Navbar Animation
-window.onscroll = function() {scrollFunction()};
-
+window.onscroll = function() {
+    scrollFunction();
+};
 function scrollFunction() {
-  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+  if (((document.body.scrollTop > 800) && (document.body.scrollTop < 2200)) || ((document.documentElement.scrollTop > 800) && (document.documentElement.scrollTop < 2200))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "black";
+    document.querySelector("img").src = "brand2.png";
+    let links = document.querySelectorAll(".navLink");
+    links.forEach(function(link) {
+      link.style.color = "white";
+    });
+    let socialLinks = document.querySelectorAll("i");
+    socialLinks.forEach(function(icon) {
+      icon.style.color = "white";
+    });
+  } else if (((document.body.scrollTop > 2200) && (document.body.scrollTop < 3000)) || ((document.documentElement.scrollTop > 2200) && (document.documentElement.scrollTop < 3000))) {
+    document.querySelector(".navbar").style.fontSize = "1rem";
+    document.querySelector(".nav").style.background = "none";
+    document.querySelector("img").src = "brand1.png";
+    let links = document.querySelectorAll(".navLink");
+    links.forEach(function(link) {
+      link.style.color = "black";
+    });
+    let socialLinks = document.querySelectorAll("i");
+    socialLinks.forEach(function(icon) {
+      icon.style.color = "black";
+    });
   } else {
     document.querySelector(".navbar").style.fontSize = "1.25rem";
     document.querySelector(".nav").style.background = "none";
+    document.querySelector("img").src = "brand2.png";
+    let links = document.querySelectorAll(".navLink");
+    links.forEach(function(link) {
+      link.style.color = "white";
+    });
+    let socialLinks = document.querySelectorAll("i");
+    socialLinks.forEach(function(icon) {
+      icon.style.color = "white";
+    });
   }
 }
