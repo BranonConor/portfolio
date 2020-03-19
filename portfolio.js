@@ -40,3 +40,17 @@ cards.forEach((item) => {
         item.classList.toggle('move');
     });
 });
+
+
+// Scroll Navbar Animation
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+    document.querySelector(".navbar").style.fontSize = "1rem";
+    document.querySelector(".nav").style.background = "black";
+  } else {
+    document.querySelector(".navbar").style.fontSize = "1.25rem";
+    document.querySelector(".nav").style.background = "none";
+  }
+}
