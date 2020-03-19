@@ -483,7 +483,7 @@ fieldset {
 input, select, textarea {
     width: 100%;
     border: none;
-    background-color: var(--secondary-accent);
+    background-color: var(--accent-color);
     border-radius: 10px;
     padding: 10px;
     outline: none;
@@ -514,6 +514,7 @@ label {
     visibility: hidden;
 }
 .message {
+    position: relative;
     text-align: center;
     width: 100%;
 }
@@ -664,6 +665,9 @@ small a {
     .fieldset-wrapper div {
         width: 95%;
     }
+    .message {
+        left: -3px;
+    }
 }
 @media only screen and (max-width: 640px) {
     /* About */
@@ -673,6 +677,8 @@ small a {
     .icon-link {
         width: 40%;
         height: 225px;
+    }    .message {
+        left: -3px;
     }
 }
 @media only screen and (max-width: 580px) {
