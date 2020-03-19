@@ -62,7 +62,7 @@ function scrollFunction() {
       icon.classList.remove("black");
       icon.classList.add("white");
     });
-  } else if (((document.body.scrollTop > 2000) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
+  } else if (((document.body.scrollTop > 2000) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2000) && (document.documentElement.scrollTop < 2900))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "none";
     document.querySelector("img").src = "brand1.png";
