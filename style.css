@@ -84,6 +84,8 @@ i {
 .hidden-anchor {
     position: relative;
     top: -80px;
+    z-index: -5;
+    margin: 0 0 0 0;
 }
 /* ----------------- NAVIGATION ------------------ */
 .nav {
@@ -339,6 +341,9 @@ i {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+#skills {
+    height: 0;
 }
 .layer {
     min-height: 100%;
