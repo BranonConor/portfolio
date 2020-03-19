@@ -49,7 +49,7 @@ window.onscroll = function() {
     }
 };
 function scrollFunction() {
-  if (((document.body.scrollTop > 790) && (document.body.scrollTop < 2100)) || ((document.documentElement.scrollTop > 790) && (document.documentElement.scrollTop < 2100))) {
+  if (((document.body.scrollTop > 760) && (document.body.scrollTop < 2000)) || ((document.documentElement.scrollTop > 760) && (document.documentElement.scrollTop < 2000))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "black";
     document.querySelector("img").src = "brand2.png";
@@ -62,7 +62,7 @@ function scrollFunction() {
       icon.classList.remove("black");
       icon.classList.add("white");
     });
-  } else if (((document.body.scrollTop > 2100) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
+  } else if (((document.body.scrollTop > 2000) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
     document.querySelector(".navbar").style.fontSize = "1rem";
     document.querySelector(".nav").style.background = "none";
     document.querySelector("img").src = "brand1.png";
