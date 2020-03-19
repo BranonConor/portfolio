@@ -44,7 +44,9 @@ cards.forEach((item) => {
 
 // Scroll Navbar Animation
 window.onscroll = function() {
-    scrollFunction();
+    if (!window.matchMedia('(max-width: 800px)').matches) {
+      scrollFunction()
+    }
 };
 function scrollFunction() {
   if (((document.body.scrollTop > 790) && (document.body.scrollTop < 2100)) || ((document.documentElement.scrollTop > 790) && (document.documentElement.scrollTop < 2100))) {
