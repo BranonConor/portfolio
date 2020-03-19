@@ -159,6 +159,7 @@ i {
     transition: 0.5s; /* IE 10+, Fx 29+, */
     height: 20vh;
     opacity: 1;
+    background-color: black;
 }
 .mobileLink {
     transition: 0.6 ease all;
