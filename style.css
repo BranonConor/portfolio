@@ -278,7 +278,6 @@ i {
 .icon-link a:hover i {
     background-color: var(--secondary-accent);
     color: var(--dark-component-color);
-    border-radius: 10px;
 }
 .links i {
     color: var(--accent-color);

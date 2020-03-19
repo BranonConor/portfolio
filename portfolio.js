@@ -54,3 +54,6 @@ function scrollFunction() {
     document.querySelector(".nav").style.background = "none";
   }
 }
+
+
+ScrollReveal().reveal('.axnimage');
