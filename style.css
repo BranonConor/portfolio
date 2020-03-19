@@ -30,7 +30,7 @@ PINK: #dDACB5;
     --dark-component-color: #464646;
     --darker-component-color: #343434;
     --light-color: #eee;
-    --accent-color: #d4a2eb;
+    --accent-color: #fcd3bc;
     --secondary-accent: #E8C7AB;
 }
 html {
@@ -47,6 +47,7 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0;
+    background: black;
 }
 p {
     transition: 0.5s;
@@ -73,7 +74,7 @@ i {
 }
 /* ----------------- NAVIGATION ------------------ */
 .nav {
-    background-color: var(--dark-component-color);
+    background-color: black;
     color: white;
     width: 100%;
     letter-spacing: 5px;
@@ -104,8 +105,12 @@ i {
 }
 .brand {
     min-width: 150px;
-    padding-left: 30px;
+    padding: 10px 0 10px 30px;
     margin: 0;
+}
+.brand img {
+    width: 225px;
+    height: auto;
 }
 .navbar {
     display: flex;
@@ -113,6 +118,7 @@ i {
     align-items: center;
     height: 80px;
     font-weight: bold;
+    font-size: 1.25rem;
 }
 .navLink {
     padding: 0 20px;
@@ -123,7 +129,7 @@ i {
     transition: 0.2s ease all;
 }
 .navLink:hover {
-    color: #BC9CB0;
+    color: var(--accent-color);
     transform: translateY(-4px);
     line-height: 75px;
 }
@@ -165,18 +171,18 @@ i {
     width: 50%;
 }
 .mobileLink:hover {
-    color: #BC9CB0;
+    color: var(--accent-color);
     transition: 0.1s;
 }
 .social {
     display: flex;
     padding-right: 30px;
 }
-.social a{
+.social a {
     border: none;
 }
 .social i:hover {
-    color: #BC9CB0;
+    color: var(--accent-color);
     transform: translateY(-4px);
 }
 /* -------------- HERO STRIP -------------- */
@@ -213,7 +219,12 @@ i {
         left: 30%;
     }
 }
-
+.hero-strip i {
+    transition: 0.4s ease all;
+}
+.hero-strip i:hover {
+    transform: translateY(7px) scale(1.1);
+}
 
 /* ------------ ABOUT-------------- */
 .about {
@@ -259,13 +270,15 @@ i {
     justify-content: center;
     text-align: center;
     margin: 20px;
+    transition: 0.4s ease all;
 }
 .icon-link a:hover {
     transform: translateY(-15px);
 }
 .icon-link a:hover i {
     background-color: var(--secondary-accent);
-    color: var(--dark-component-color)
+    color: var(--dark-component-color);
+    border-radius: 10px;
 }
 .links i {
     color: var(--accent-color);
@@ -301,7 +314,7 @@ i {
     content: 'LinkedIn';
 }
 .icon-link a:hover::before {
-    transform: translateY(80px);
+    transform: translateY(70px);
     font-size: 1.2rem;
 }
 
@@ -321,7 +334,7 @@ i {
     height: 100%;
     width: 33%;
     padding: 10px;
-    background-color: var(--secondary-accent);
+    background-color: black;
     position: relative;
     left: 0;
     z-index: 3;
@@ -334,15 +347,31 @@ i {
     width: 40%;
 }
 .layer:nth-of-type(2) {
-    background: #b3bebe;
+    background: var(--darker-component-color);
     z-index: 2;
 }
 .layer:last-of-type {
-    background: var(--accent-color);
+    background-color: var(--dark-component-color);
     z-index: 1;
 }
 /*-------------- AXN CREATIVE ---------- */
-
+.axn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: var(--accent-color);
+    position: relative;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+}
+.axn img {
+    width: 50%;
+    height: auto;
+}
 
 /* -------------- CONTACT FORM ----------------- */
 .form-strip {
@@ -474,6 +503,59 @@ li {
         font-size: 1rem;
     }
 }
+
+@media only screen and (max-width: 800px) {
+        /* Mobile Nav */
+        .navbar {
+            display: none;
+        }
+        .social {
+            display: none;
+        }
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            width: 20px;
+            height: auto;
+            padding: 8px 20px 8px 10px;
+            position: relative;
+            left: -5%;
+            transition: 0.4s ease all;
+            background-color: #eee;
+            border-radius: 10px;
+        } 
+        .bar1, .bar3 {
+            width: 30px;
+            height: 4px;
+            background-color: var(--darker-component-color);
+            margin: 6px 0;
+            transition: 0.6s;
+            border-radius: 10px;
+        }
+        .bar2 {
+            width: 30px;
+            height: 4px;
+            background-color: var(--darker-component-color);
+            margin: 6px 0;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+    
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg);
+            transform: translateY(10px) rotate(-228deg);
+        }
+        /*  translate(3px, -5px) */
+        .change .bar2 {
+            transform: rotate(125deg) translateY(-10px) translateX(30px);
+            opacity: 0;
+        }
+        .change .bar3 {
+            -webkit-transform: rotate(45deg);
+            transform: translateY(-10px) rotate(48deg);
+        /*  translate(-9px, -12px) */
+        }
+}
 @media only screen and (max-width: 780px) {
     .navbar-socials {
         display: none;
@@ -495,58 +577,13 @@ li {
     }
 }
 @media only screen and (max-width: 640px) {
-    /* Mobile Nav */
-    .navbar {
-        display: none;
+    /* About */
+    .links {
+        flex-wrap: wrap;
     }
-    .social {
-        display: none;
-    }
-    .hamburger {
-        display: inline-block;
-        cursor: pointer;
-        width: 20px;
-        height: auto;
-        padding: 8px 20px 8px 10px;
-        position: relative;
-        left: -5%;
-        transition: 0.4s ease all;
-        background-color: #eee;
-        border-radius: 10px;
-    } 
-    .bar1, .bar3 {
-        width: 30px;
-        height: 4px;
-        background-color: var(--darker-component-color);
-        margin: 6px 0;
-        transition: 0.6s;
-    }
-    .bar2 {
-        width: 30px;
-        height: 4px;
-        background-color: var(--darker-component-color);
-        margin: 6px 0;
-        transition: 0.5s;
-    }
-
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg);
-        transform: translateY(10px) rotate(-228deg);
-    }
-    /*  translate(3px, -5px) */
-    .change .bar2 {
-        transform: rotate(125deg) translateY(-10px) translateX(30px);
-        opacity: 0;
-    }
-    .change .bar3 {
-        -webkit-transform: rotate(45deg);
-        transform: translateY(-10px) rotate(48deg);
-    /*  translate(-9px, -12px) */
-    }
-    .athlete-strip h2 {
-        width: 80%;
-        line-height: 40px; 
-        font-weight: bold;
+    .icon-link {
+        width: 40%;
+        height: 225px;
     }
 }
 @media only screen and (max-width: 580px) {
