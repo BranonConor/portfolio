@@ -1,14 +1,4 @@
 AOS.init();
-$(function() {
-    $(window).scroll(function () {
-       if ($(this).scrollTop() > 50) {
-          $('.nav').addClass('changeColor')
-       }
-       if ($(this).scrollTop() < 50) {
-          $('.nav').removeClass('changeColor')
-       }
-    });
- });
 
 
  // GLOBALS
@@ -16,6 +6,11 @@ const hamburger = document.querySelector('.hamburger');
 const navMobile = document.querySelector('.nav-mobile');
 const mobileLinks = document.querySelectorAll('.mobileLink');
 const cards = document.querySelectorAll('.card');
+const image = document.querySelector("img");
+const nav = document.querySelector(".nav");
+const navbar = document.querySelector(".navbar");
+const links = document.querySelectorAll(".navLink");
+const socialLinks = document.querySelectorAll("i");
 
 // HELPER FUNCS
 const expandMenu = () => {
@@ -49,41 +44,24 @@ window.onscroll = function() {
     }
 };
 function scrollFunction() {
-  if (((document.body.scrollTop > 760) && (document.body.scrollTop < 2000)) || ((document.documentElement.scrollTop > 760) && (document.documentElement.scrollTop < 2000))) {
-    document.querySelector(".navbar").style.fontSize = "1rem";
-    document.querySelector(".nav").style.background = "black";
-    document.querySelector("img").src = "brand2.png";
-    let links = document.querySelectorAll(".navLink");
-    links.forEach(function(link) {
-      link.style.color = "white";
-    });
-    let socialLinks = document.querySelectorAll("i");
-    socialLinks.forEach(function(icon) {
-      icon.classList.remove("black");
-      icon.classList.add("white");
-    });
-  } else if (((document.body.scrollTop > 2000) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2000) && (document.documentElement.scrollTop < 2900))) {
-    document.querySelector(".navbar").style.fontSize = "1rem";
-    document.querySelector(".nav").style.background = "none";
-    document.querySelector("img").src = "brand1.png";
-    let links = document.querySelectorAll(".navLink");
+  if (((document.body.scrollTop > 2100) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
+    navbar.style.fontSize = "1rem";
+    nav.style.background = "none";
+    image.src = "brand1.png";
     links.forEach(function(link) {
       link.style.color = "black";
     });
-    let socialLinks = document.querySelectorAll("i");
     socialLinks.forEach(function(icon) {
       icon.classList.add("black");
       icon.classList.remove("white");
     });
   } else {
-    document.querySelector(".navbar").style.fontSize = "1.25rem";
-    document.querySelector(".nav").style.background = "none";
-    document.querySelector("img").src = "brand2.png";
-    let links = document.querySelectorAll(".navLink");
+    navbar.style.fontSize = "1rem";
+    nav.style.background = "black";
+    image.src = "brand2.png";
     links.forEach(function(link) {
       link.style.color = "white";
     });
-    let socialLinks = document.querySelectorAll("i");
     socialLinks.forEach(function(icon) {
       icon.classList.remove("black");
       icon.classList.add("white");
