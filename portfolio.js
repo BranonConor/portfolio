@@ -47,6 +47,7 @@ function scrollFunction() {
   if (((document.body.scrollTop > 2100) && (document.body.scrollTop < 2900)) || ((document.documentElement.scrollTop > 2100) && (document.documentElement.scrollTop < 2900))) {
     navbar.style.fontSize = "1rem";
     nav.style.background = "none";
+    nav.classList.remove("box-shadow");
     image.src = "brand1.png";
     links.forEach(function(link) {
       link.style.color = "black";
@@ -58,6 +59,7 @@ function scrollFunction() {
   } else {
     navbar.style.fontSize = "1rem";
     nav.style.background = "black";
+    nav.classList.add("box-shadow");
     image.src = "brand2.png";
     links.forEach(function(link) {
       link.style.color = "white";
