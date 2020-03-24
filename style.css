@@ -102,6 +102,9 @@ i {
     align-items: center;
     height: auto;
     transition: 0.4s ease all;
+    -webkit-box-shadow: 0px -3px 20px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px -3px 20px 1px rgba(0,0,0,0.7);
+    box-shadow: 0px -3px 20px 1px rgba(0,0,0,0.7);
 }
 .nav h2 {
     font-size: 1.3rem;
