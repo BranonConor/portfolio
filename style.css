@@ -462,11 +462,10 @@ i {
     font-size: 3rem;
     color: #E8C7AB;
 }
-.form-strip h2 {
+.form-strip h3 {
     color: white;
     text-align: center;
     font-weight: thin;
-    font-size: 2rem;
     padding: 0 20px;
 }
 .contact-form {
